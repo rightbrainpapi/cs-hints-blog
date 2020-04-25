@@ -24,16 +24,15 @@
 :white_check_mark: Write using Markdown On Github Issues \
 :white_check_mark: Syntax/Code Highlighting \
 :white_check_mark: Fully customizable \
-:white_check_mark: Tags - Topics  \
+:white_check_mark: Tags - Topics \
 :white_check_mark: Links \
-:white_check_mark: Reactions  \
+:white_check_mark: Reactions \
 :white_check_mark: Images \
 :white_check_mark: Minutes Read \
 :white_check_mark: Beautiful UI Like Medium \
 :white_check_mark: Easy deployment: Using Github Pages \
 :white_check_mark: Instant Effects on Blog when changing github issues \
-:white_check_mark: Beautiful blockquote   
-
+:white_check_mark: Beautiful blockquote
 
 ## :link: Live Demo
 
@@ -41,10 +40,10 @@ Here's a [live demo](https://saadpasta.github.io/react-blog-github/#/)
 
 Github [Issues / Blogs](https://github.com/saadpasta/react-blog-github/issues)
 
-
---- 
+---
 
 ## 🚀 Get Up and Running in 10 Minutes
+
 You can get a react-blog site up and running on your local dev environment in 10 minutes with these five steps:
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -85,6 +84,7 @@ After that copy your generated token and then encode your token into base 64 usi
 Go on the following URL: https://github.com/settings/apps/new
 
 There are a few fields to fill carefully:
+
 - Homepage URL: https://your_username.github.io/react-blog-github/
 - Callback URL: https://your_username.github.io/react-blog-github/
 - Check "Request user authorization (OAuth) during installation"
@@ -93,50 +93,53 @@ In permissions & events, set `Read & Write` on Issues
 In "Install App", install the app on your user and select your repository
 
 ### 4. **Change `/src/config.js`.**
+
 Go to your cloned repository and make the following changes in `/src/config.js`
 
 ```javascript
 export const config = {
-  // Your Github Converted Token To Know How To Get Your Token Look at Readme.md
-  githubConvertedToken: "Your token here",
+	// Your Github Converted Token To Know How To Get Your Token Look at Readme.md
+	githubConvertedToken: "Your token here",
 
-  // Your Github UserName
-  githubUserName: "Your username here",
+	// Your Github UserName
+	githubUserName: "Your username here",
 
-  // Your Github Repo Name Where You Have your issues as Blog
-  githubRepo: "Your repo's name here",
+	// Your Github Repo Name Where You Have your issues as Blog
+	githubRepo: "Your repo's name here",
 
-  // Set it to true if you have a Github app to add to this project
-  // and fill the client ID & secret
-  enableOAuth: true,
-  OAuthClientID: 'Github App Client ID',
-  OAuthSecret: 'Github App Secret',
+	// Set it to true if you have a Github app to add to this project
+	// and fill the client ID & secret
+	enableOAuth: true,
+	OAuthClientID: "Github App Client ID",
+	OAuthSecret: "Github App Secret",
 
-  // Your Personal Blog Title
-  title : "Title of your blog" ,
+	// Your Personal Blog Title
+	title: "Title of your blog",
 
-  // Your Personal Blog Subtitle
-  subtitle : "Subtitle of your blog",
+	// Your Personal Blog Subtitle
+	subtitle: "Subtitle of your blog",
 
-  // Header customization
-  header: {
-    backgroundColor: '#f1f6f8', // can be a CSS gradient
-    titleColor: '#ff5252',
-    subtitleColor: '#37474f',
-  },
+	// Header customization
+	header: {
+		backgroundColor: "#f1f6f8", // can be a CSS gradient
+		titleColor: "#ff5252",
+		subtitleColor: "#37474f",
+	},
 };
 ```
 
 ### 5. **Write A Blog.**
+
 After doing following changes now you just need to write a blog on repository issues that you have mentioned in your `config.js`
 
 - Open your repository [github issues](https://github.com/saadpasta/react-blog-github/issues)
-- Create a new issue 
+- Create a new issue
 - Now write your blog in github issue in markdown. You can also use [slack edit](https://stackedit.io/app#) to write your markdown
 - Add a label `blog` on your github issue to make it different from other standard issues. Keep in mind `blog` label is mandatory otherwise it won't show on your website.
 
 ### 6. **Start Your React App.**
-That's it now you just need to start your react application From your command line run . 
+
+That's it now you just need to start your react application From your command line run .
 
 ```bash
 # Run
@@ -144,41 +147,40 @@ $ npm start
 
 ```
 
---- 
+---
 
-## 🛠️ Technologies used 
+## 🛠️ Technologies used
+
 This project is only possible thanks to the awesomeness of the following projects:
 
 - [React](https://reactjs.org/)
-- [graphql](https://graphql.org/) 
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/) 
+- [graphql](https://graphql.org/)
+- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
 - [GitHub](https://github.com)
 - [markdown-to-jsx](https://probablyup.com/markdown-to-jsx/)
 - [React Syntax Highlighter](https://github.com/conorhastings/react-syntax-highlighter)
 - [react-reactions](https://casesandberg.github.io/react-reactions/)
 
-
 ## :seedling: Inspiration
-This project is inspired from many other similar projects. 
+
+This project is inspired from many other similar projects.
 
 - [gatsby-theme-blog-with-github](https://github.com/mddanishyusuf/gatsby-theme-blog-with-github)
 - [utterances](https://github.com/utterance/utterances)
 
-
-
 ## 🤝 Contributing
 
-Any idea on how we can make this more awesome ? [Open a new issue](https://github.com/saadpasta/react-blog-github/issues)!  We need all the help we can get to make this project awesome!
+Any idea on how we can make this more awesome ? [Open a new issue](https://github.com/saadpasta/react-blog-github/issues)! We need all the help we can get to make this project awesome!
 
 ## :boom: Todo
+
 - Add Comment From Github
 - Authentication using Github
-- Footer 
+- Footer
 - Header
 - Social Media Sharing
 
-
-## 📄 License 
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
 
@@ -191,6 +193,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+   <td align="center"><a href="http://github.com/rightbrainpapi"><img src="https://avatars0.githubusercontent.com/u/44482460?v=4" width="100px;" alt=""/><br /><sub><b>Darnell Simon</b></sub></a><br /><a href="https://github.com/saadpasta/react-blog-github/commits?author=Muhammad-Hammad" title="Documentation">🌍</a></td>
     <td align="center"><a href="http://github.com/MuhammadHammad"><img src="https://avatars0.githubusercontent.com/u/37264033?v=4" width="100px;" alt=""/><br /><sub><b>SyedMuhammadHammadGhani</b></sub></a><br /><a href="https://github.com/saadpasta/react-blog-github/commits?author=Muhammad-Hammad" title="Documentation">📖</a></td>
     <td align="center"><a href="http://saadpasta.github.io"><img src="https://avatars2.githubusercontent.com/u/23307811?v=4" width="100px;" alt=""/><br /><sub><b>Saad Pasta</b></sub></a><br /><a href="https://github.com/saadpasta/react-blog-github/commits?author=saadpasta" title="Code">💻</a> <a href="https://github.com/saadpasta/react-blog-github/commits?author=saadpasta" title="Documentation">📖</a> <a href="#design-saadpasta" title="Design">🎨</a> <a href="#maintenance-saadpasta" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/jvm-odoo"><img src="https://avatars0.githubusercontent.com/u/9156538?v=4" width="100px;" alt=""/><br /><sub><b>Jason Van Malder</b></sub></a><br /><a href="https://github.com/saadpasta/react-blog-github/commits?author=jvm-odoo" title="Code">💻</a> <a href="#infra-jvm-odoo" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
@@ -201,6 +204,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
